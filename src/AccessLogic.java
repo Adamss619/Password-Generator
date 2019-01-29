@@ -14,7 +14,6 @@ public class AccessLogic {
         int index = keyboard.nextInt();
         System.out.print("Account Name: ");
         System.out.println(localAccount[index]);
-        System.out.println(decryptedKey);
         PasswordLogic logic = new PasswordLogic(localAccount[index + 1], localAccount[index], decryptedKey);
         System.out.println("Password: " + logic.getPassword());
     }
