@@ -100,8 +100,13 @@ public class AccessLogic {
     public static void newAccount() {
         System.out.println("New Selected");
         System.out.println("Please enter the account name");
-        String accountName = keyboard.nextLine();
-
+        String accountName = "";
+        while(accountName.length() <= 0) {
+            accountName = keyboard.nextLine();
+            if(accountName.length() <= 0){
+                System.out.println("Please supply a valid account name.");
+            }
+        }
         PasswordLogic newAccount = new PasswordLogic();
         newAccount.setAccount(accountName, decryptedKey);
         newAccount.generatePassword(10);

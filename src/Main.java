@@ -10,8 +10,8 @@ public class Main {
         System.out.println("Welcome to PasswordGenerator V0.1");
         System.out.println("Loading Up Presets");
         boolean passwordLog = AccessLogic.verifyLogin();
+        System.out.println("For a list of options type: Help");
         while ((passwordLog)) { //logic for active program
-            System.out.println("For a list of options type Help");
             Scanner keyboard = new Scanner(System.in);
             String entry = keyboard.nextLine();
 
