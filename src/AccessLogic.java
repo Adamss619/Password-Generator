@@ -1,6 +1,9 @@
 import java.io.*;
 import java.util.Scanner;
 
+/**
+ * @author spenceradams
+ */
 public class AccessLogic {
     private static String decryptedKey;
     private static Scanner keyboard = new Scanner(System.in);
@@ -69,7 +72,7 @@ public class AccessLogic {
                 System.out.println("Nice to meet you " + accountS);
                 writer.write(accountS + "\n");
 
-                System.out.println("Would you also input a password. You will use this password everytime this program is accessed");
+                System.out.println("Would you also input a password. You will use this password every time this program is accessed");
                 String passwordS = account.nextLine();
                 PasswordLogic userAccount = new PasswordLogic();
                 PasswordLogic keyHash = new PasswordLogic();

@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * @author spenceradams
+ */
 public class Main {
 
     private static boolean passwordLog = false;
@@ -19,7 +22,7 @@ public class Main {
                 case "help":
                     System.out.println("To create new account type: New");
                     System.out.println("To look at already created accounts type: List");
-                    System.out.println("To access already created account type: Account Info");
+                    System.out.println("To access already created accounts type: Account Info");
                     break;
                 case "new":
                     AccessLogic.newAccount();

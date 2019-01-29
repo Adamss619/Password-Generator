@@ -1,3 +1,6 @@
+/**
+ * @author spenceradams
+ */
 public class PasswordLogic {
 
     private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnop";
